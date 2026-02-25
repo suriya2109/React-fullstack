@@ -5,11 +5,13 @@ import AboutPage from "./pages/About";
 import ArticleLists from "./pages/ArticleLists";
 import ArticlePage from "./pages/ArticlePage";
 import Layout from "./Layout";
+import NotFoundPage from "./pages/NotFoundPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <NotFoundPage />,
     children: [
       { path: "/", element: <HomePage /> },
       { path: "/about", element: <AboutPage /> },
