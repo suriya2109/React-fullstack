@@ -6,6 +6,8 @@ import ArticleLists from "./pages/ArticleLists";
 import ArticlePage,{loader as articleLoader } from "./pages/ArticlePage";
 import Layout from "./Layout";
 import NotFoundPage from "./pages/NotFoundPage";
+import LoginPage from "./pages/LoginPage";
+import CreateAccountPage from "./pages/CreateAccountPage";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,8 @@ const router = createBrowserRouter([
       { path: "/articles/:name", element: <ArticlePage />,
         loader: articleLoader 
        },
+      { path: "/login", element: <LoginPage /> },
+      { path: "/create-account", element: <CreateAccountPage /> },
     ],
   },
 ]);
