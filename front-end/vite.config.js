@@ -7,7 +7,7 @@ export default defineConfig({
     server: {
         proxy: {
             "/api": {
-                target: "https://qlxvf88c-8000.inc1.devtunnels.ms",
+                target: "http://localhost:8000",
                 changeOrigin: true,
             }
         }
